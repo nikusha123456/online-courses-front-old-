@@ -1,0 +1,17 @@
+.buki {
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.buki1 {
+  font-weight: 700;
+  font-family: sans-serif;
+  color: rgb(198, 139, 253);
+}
+#cheminavbari {
+  background-color: rgb(198, 139, 253);
+}
+
+#cheminavbari a {
+  color: white;
+}
