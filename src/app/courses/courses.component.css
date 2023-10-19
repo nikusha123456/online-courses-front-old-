@@ -1,0 +1,24 @@
+#coursescomp {
+  margin-top: 70px;
+}
+.h-full {
+  height: 216px;
+}
+.chemiform {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+#mtavaridiv {
+  width: 600px;
+}
+
+#searchbutton {
+  height: 100%;
+  background-color: rgb(198, 139, 253);
+  border-color: rgb(198, 139, 253);
+}
