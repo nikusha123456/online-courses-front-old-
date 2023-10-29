@@ -11,6 +11,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { FooterComponent } from './footer/footer.component';
 import { CoursesComponent } from './courses/courses.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MycoursesComponent } from './mycourses/mycourses.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     AboutmeComponent,
     FooterComponent,
     CoursesComponent,
+    MycoursesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

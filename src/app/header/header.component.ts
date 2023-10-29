@@ -5,4 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  isDisplayed = false;
+
+  toggleDisplay(): void {
+    this.isDisplayed = !this.isDisplayed;
+  }
+}

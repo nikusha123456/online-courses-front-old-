@@ -13,6 +13,7 @@
       <button
         type="button"
         class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        (click)="toggleDisplay()"
       >
         <span class="sr-only">Open main menu</span>
         <svg
@@ -38,7 +39,11 @@
         >Courses</a
       >
       <a class="text-sm font-semibold leading-6 text-gray-900">Add Course</a>
-      <a class="text-sm font-semibold leading-6 text-gray-900">My Courses</a>
+      <a
+        class="text-sm font-semibold leading-6 text-gray-900"
+        routerLink="/mycourses"
+        >My Courses</a
+      >
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       <a
@@ -49,7 +54,12 @@
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="lg:hidden" role="dialog" aria-modal="true">
+  <div
+    class="lg:hidden"
+    role="dialog"
+    aria-modal="true"
+    [style.display]="isDisplayed ? 'block' : 'none'"
+  >
     <!-- Background backdrop, show/hide based on slide-over state. -->
     <div class="fixed inset-0 z-50"></div>
     <div
@@ -63,6 +73,7 @@
           type="button"
           class="-m-2.5 rounded-md p-2.5 text-gray-700"
           id="closebutton"
+          (click)="toggleDisplay()"
         >
           <span class="sr-only">Close menu</span>
           <svg
@@ -87,11 +98,7 @@
             <a
               href="#"
               class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              >Categories</a
-            >
-            <a
-              href="#"
-              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+              routerLink="/courses"
               >Courses</a
             >
             <a
@@ -102,6 +109,7 @@
             <a
               href="#"
               class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+              routerLink="/mycourses"
               >My Courses</a
             >
           </div>
