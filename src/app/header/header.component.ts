@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
+  isDisplayed = false;
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
-  isDisplayed = false;
 
   toggleDisplay(): void {
     this.isDisplayed = !this.isDisplayed;
